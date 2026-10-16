@@ -19,7 +19,7 @@ namespace RaceDay.API.Models
 
         [Required, MaxLength(50)]
         public string phone { get; set; } = string.Empty;
-
+// for dateofbirth&time
         public DateTime dateofbirth { get; set; }
 
         [Required, MaxLength(50)]
@@ -30,7 +30,7 @@ namespace RaceDay.API.Models
 
         [Required, MaxLength(100)]
         public string emergency_contact { get; set; } = string.Empty;
-
+      
         public DateTime created_at { get; set; }
 
         public string? password_hash { get; set; }
