@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace RaceDay.API.Models
 {
-//Participants 
+//for Participants 
     [Table("Participant")]
     public class Participant
     {
@@ -13,7 +13,7 @@ namespace RaceDay.API.Models
 
         [Required, MaxLength(50)]
         public string name { get; set; } = string.Empty;
-
+    //for email 
         [Required, EmailAddress, MaxLength(50)]
         public string email { get; set; } = string.Empty;
 
